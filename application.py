@@ -6,7 +6,7 @@ from validate_email import validate_email
 from whitenoise import WhiteNoise
 
 application = Flask(__name__) #establishing flask app
-static = WhiteNoise(app, root='./static/')
+static = WhiteNoise(application, root='./static/')
 
 def verify(email):
     is_valid = validate_email(email, verify = True)
