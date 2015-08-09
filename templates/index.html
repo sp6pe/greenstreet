@@ -1,3 +1,115 @@
 <html>
-	<p> weed app </p>
+<head>
+    <link href="{{ url_for('static', filename='css/materialize.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/materialize.min.js') }}"></script>
+</head>
+  <body>
+    <div class="navbar-fixed">  
+      <nav class="navbar" role="navigation">
+          <div class="nav-wrapper container">
+            <a id="logo-container" href="/" class="brand-logo logo-name">Green Street</a>
+            <ul class="right hide-on-med-and-down light">
+              <li>Text: (720) 263-4206</li>
+            </ul>
+<!--             <ul class="right hide-on-med-and-down">
+              <li><a href="#companies">Companies</a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#mentors">Pricing</a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#students">Students</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+              <li><a href="#companies">Companies</a></li>
+              <li><a href="#students">Students</a></li>
+              <li><a href="#">Login</a></li>
+            </ul> -->
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+          </div>
+      </nav>
+    </div>
+    <div id="content">
+        <div class="section no-pad-bot top" id="index-banner">
+            <div class="container">
+              <br><br>
+              <h3 class="company">Order Marijuana</h3>
+              <div class="row center">
+                <h5 class="header col s12 light white-text">By Texting This Number:</h5>
+              </div>
+              <div class="row center">
+                <h3 class="center white-text">(720) 263-4206</h3>
+              </div>
+              <div class="row center">
+                <h5 class="center white-text">And We'll Hand-Deliver it to You</h5>
+                <h6 class="center white-text">(Denver Only, For Now)</h6>
+              </div>  
+              <br>
+<!--               <div class="row center" id="buttons">
+                <div class="col s12 m6 link">
+                  <a href="#" id="candidates" class="button btn-large waves-effect waves-light deep-orange">Students</a>
+                </div>
+                <div class="col s12 m6 link">
+                  <a href="#" id="candidates" class="button btn-large waves-effect waves-light deep-orange">Companies</a>
+                </div>
+              </div>
+              <div class="row center">
+                <br>
+                <a style="color:white;" href="https://kc19.typeform.com/to/tJmwjt" target="_blank">Want JobFire at your school? Sign up here</a>
+              </div> -->
+              <br><br><br>
+            </div>
+          </div>
+        </div>
+
+  <div class="lighter services" id="students">
+          <div class="container">
+            <div class="section">
+              <!--   Icon Section   -->
+            <div class="section">
+              <h4>About Green Street</h4>
+              <div class="row">
+                <div class="col s12 m12">
+                    <p class="light answers">We've designed the simplest marijuana delivery service possible.</a></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m4">
+                  <div class="icon-block">
+                    <h2 class="center top-icons"><i class="medium material-icons top-icons">textsms</i></h2>
+                    <h5 class="center">Order by SMS</h5>
+
+                    <p class="light">Send us a text, and we'll reply with our menu. Give us your address, tell us what you want, then kick back and relax.</p>
+                  </div>
+                </div>
+
+                <div class="col s12 m4">
+                  <div class="icon-block">
+                    <h2 class="center top-icons"><i class="medium material-icons top-icons">thumb_up</i></h2>
+                    <h5 class="center">High Quality</h5>
+
+                    <p class="light">We only work with top-rated dispensaries and delivery services, so the best products reach your doorstep.</p>
+                  </div>
+                </div>
+                <div class="col s12 m4">
+                  <div class="icon-block">
+                    <h2 class="center top-icons"><i class="medium material-icons top-icons">done</i></h2>
+                    <h5 class="center">Fully Compliant</h5>
+
+                    <p class="light">We only deliver to patrons above the age of 21, and are careful to ensure our delivery processes comply with local laws.</p>
+                  </div>
+                </div>
+              </div><br>
+              <div class="row center">
+                <a href="mailto:greenstreetgo@gmail.com" target="_top">Contact Us</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+  </body>
 </html>
