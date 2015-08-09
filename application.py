@@ -12,11 +12,11 @@ def verify(email):
     is_valid = validate_email(email, verify = True)
     return is_valid
 
-@app.route('/')
+@application.route('/')
 def index():
 	return render_template('index.html')
 
-@app.route("/received/", methods=['GET', 'POST'])
+@application.route("/received/", methods=['GET', 'POST'])
 def receive_message():
     sender = request.values.get('From',None)
     db = connect_db('MONGOHQ_URL', 'MONGO_DATABASE_NAME')
