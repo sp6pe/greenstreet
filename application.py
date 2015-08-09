@@ -5,7 +5,7 @@ from utils import connect_db
 from validate_email import validate_email
 from whitenoise import WhiteNoise
 
-app = Flask(__name__) #establishing flask app
+application = Flask(__name__) #establishing flask app
 static = WhiteNoise(app, root='./static/')
 
 def verify(email):
@@ -49,7 +49,8 @@ def receive_message():
     return str(resp)
 
 if __name__ == "__main__":
-	app.run(debug = True)
+    application.debug = True
+    application.run()
 
 
 
